@@ -12,6 +12,18 @@ module.exports = {
       {
         test: /\.css$/,
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'postcss-loader' }],
+        // use: [
+        //   { // Add this lines before css-loader
+        //     loader: isProductionEnv ? MiniCssExtractPlugin.loader : 'style-loader'
+        //   },
+
+        //   {
+        //     loader: 'css-loader',
+        //     options: {
+        //       import: true,
+        //     },
+        //   },
+        // ],
         include: defaultInclude
       },
       {
@@ -52,8 +64,8 @@ module.exports = {
         ['.'],
         { shell: true, env: process.env, stdio: 'inherit' }
       )
-      .on('close', code => process.exit(0))
-      .on('error', spawnError => console.error(spawnError))
+        .on('close', code => process.exit(0))
+        .on('error', spawnError => console.error(spawnError))
     }
   }
 }

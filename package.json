@@ -13,9 +13,8 @@
     "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate/issues"
   },
   "author": {
-    "name": "Alex Devero",
-    "email": "deveroalex@gmail.com",
-    "url": "https://github.com/alexdevero"
+    "name": "Gyeonghoon Kim",
+    "email": "gutdoktor@naver.com"
   },
   "keywords": [
     "app",
@@ -46,9 +45,22 @@
     "postpackage": "electron-packager ./ --out=./builds"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/joy": "^5.0.0-alpha.61",
+    "@mui/lab": "^5.0.0-alpha.114",
+    "@mui/material": "^5.11.2",
+    "csv-parse": "^5.3.3",
+    "fslightbox-react": "file:src/assets/fslightbox-react-pro-1.5.2.tgz",
     "postcss": "^8.4.8",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.0",
+    "request": "^2.88.2",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -56,10 +68,11 @@
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.7.1",
+    "css-loader": "^6.7.3",
     "electron": "^19.0.1",
     "electron-devtools-installer": "^3.2.0",
     "electron-packager": "^15.5.1",
+    "electron-rebuild": "^3.2.9",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
